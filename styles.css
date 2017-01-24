@@ -6,73 +6,120 @@ dd, ol, ul, li, fieldset, form, label, legend, table, caption,
 tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
 embed, figure, figcaption, footer, header, hgroup, menu, nav,
 output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 }
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 img, fieldset, a img {
-  border: none;
+	border: none;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 input[type="submit"],
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 input[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+	padding: 0;
+	border: 0;
 }
 
 textarea {
-  overflow: auto;
+	overflow: auto;
 }
 
 input, button {
-  margin: 0;
-  padding: 0;
-  border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 div, input, textarea, select, button,
 h1, h2, h3, h4, h5, h6, a, span, a:focus {
-  outline: none;
+	outline: none;
 }
 
 ul, ol, li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
 }
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
 }
 
 .container {
 	height: 100%;
 	width: 100%;
+	font-size: 0;
+	display: none;
 }
+
+.container:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+
+.inner {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* start second */
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 240px;
+	font-size: 0;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.progress-bar-simple {
+	margin: 0 auto;
+	border: 2px solid #0155e0;
+	border-radius: 5px;
+	width: 90%;
+	max-width: 400px;
+	height: 20px;
+}
+
+.progress-bar-simple__inner {
+
+}
+/* end second */
