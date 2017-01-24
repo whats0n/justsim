@@ -82,6 +82,7 @@
 		html,
 		body {
 			height: 100%;
+			font-family: Calibri, Arial, sans-serif;
 		}
 
 		.container {
@@ -277,7 +278,6 @@
 		.message {
 		  max-width: 600px;
 		  margin: 0 auto;
-		  font-family: "Calibri";
 		}
 		.message__title {
 		  padding: 20px;
@@ -375,13 +375,15 @@
 		var preloader = document.getElementById('preloader');
 		var preloaderLoad = preloader.querySelector('.load');
 
-		function hidePreloader() {
+		function hidePreloader(page) {
 			preloaderLoad.classList.add('is-hide');
+
+			var nextPage = page || "hero";
 
 			setTimeout(function() {
 
 			    preloader.classList.add('is-hide');
-			    showPage("hero");
+			    showPage(nextPage);
 
 			}, 200);
 		}
@@ -430,6 +432,7 @@
 
 		hidePages();
 		showPage("preloader");
+
 		// hidePreloader();
 		// SetProgressMax(17);
 		// SetProgressValue(3);

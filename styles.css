@@ -77,6 +77,10 @@ body {
 	height: 100%;
 }
 
+body {
+	font-family: Calibri, Arial, sans-serif
+}
+
 .container {
 	padding: 20px;
 	width: 100%;
@@ -270,7 +274,6 @@ body {
 .message {
   max-width: 600px;
   margin: 0 auto;
-  font-family: "Calibri";
 }
 .message__title {
   padding: 20px;
